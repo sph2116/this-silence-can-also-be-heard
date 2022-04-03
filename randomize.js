@@ -202,6 +202,7 @@ function stopBgChange(){
 //Clear start screen when user clicks start
 startButtonTag.addEventListener("click", function(){
     startScreenTag.style.opacity = 0;
+    bellSound.play()
     bgChange()
 
     $(".text").animate({opacity: 1}, 3000)

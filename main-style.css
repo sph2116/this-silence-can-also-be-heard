@@ -12,6 +12,13 @@
   font-style: italic;
 }
 
+@font-face {
+  src: url(assets/AnoBold-Italic.otf);
+  font-family: 'Ano Bold';
+  font-weight: 600;
+  font-style: italic;
+}
+
 @keyframes breathe {
     0% {
         opacity: 1;
@@ -123,8 +130,8 @@ body {
 }
 
 .personal-text {
-  font-size: 1rem;
-  line-height: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 2.5;
   font-family: 'Ano';
   font-weight: 400;
   font-style: italic;
@@ -149,11 +156,16 @@ body {
   z-index: 7;
 }
 
+.last-line {
+  font-family: 'Ano Bold';
+}
+
 .last-section .last-line{
+
   position: relative;
   text-align: center;
   display: block;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.75;
 }
 
@@ -219,6 +231,7 @@ div.layer3 {
 
 #attribution {
   /* width: 80%; */
+  font-size: 1rem;
   display: block;
   opacity: .75;
   margin-top: 24px;
@@ -255,6 +268,11 @@ div.main-circle {
     height: var(--height);
     transform: translate(calc(-1 * var(--width) / 2),calc(-1 * var(--height) / 2));
   }
+
+  h2 {
+    transform: translateY(-24px);
+  }
+
 }
 
 @media (min-width: 1000px){
