@@ -17,14 +17,14 @@ let timeLeft = true
 let layer1On = true
 
 //Set position of text block based on window height on load
-let windowHeight = $(window).height()
-console.log(`window height is ${windowHeight}`)
-let textTop = windowHeight 
-let textHeight = $(".text").height()
-console.log(`text height is ${textHeight}`)
-console.log(`Text top is ${textTop}`)
-$(".text").css("top", `+=${textTop}`)
-console.log("Text top position is " + $(".text").offset().top)
+// let windowHeight = $(window).height()
+// console.log(`window height is ${windowHeight}`)
+// let textTop = windowHeight 
+// let textHeight = $(".text").height()
+// console.log(`text height is ${textHeight}`)
+// console.log(`Text top is ${textTop}`)
+// $(".text").css("top", `+=${textTop}`)
+// console.log("Text top position is " + $(".text").offset().top)
 
 //LAYER 1 INITIAL SETUP
 let layer1h1 = Math.random() * 360
@@ -204,21 +204,23 @@ startButtonTag.addEventListener("click", function(){
     startScreenTag.style.opacity = 0;
     bgChange()
 
-    textHeight = $(".text").height()
-    textTop = (textHeight * -1) - 40
-    console.log("text top " + `${textTop}`)
-    windowHeight = $(window).height()
+    $(".text").animate({opacity: 1}, 3000)
+
+    // textHeight = $(".text").height()
+    // textTop = (textHeight * -1) - 40
+    // console.log("text top " + `${textTop}`)
+    // windowHeight = $(window).height()
 
 
-    $(".text").animate({
-       top: textTop, easing: "linear"},50000,function(){
-        bellSound.play()
-        $(".last-section").animate({opacity: 1}, 3000)
+    // $(".text").animate({
+    //    top: textTop, easing: "linear"},50000,function(){
+    //     bellSound.play()
+    //     $(".last-section").animate({opacity: 1}, 3000)
 
-        //Set position of text on load
-        windowHeight = $(window).height()
-        // $(".text").css("top", `+=${windowHeight}`)
-    }); //End animate
+    //     //Set position of text on load
+    //     windowHeight = $(window).height()
+    //     // $(".text").css("top", `+=${windowHeight}`)
+    // }); //End animate
  })//End start button click
 
 })//End Document Ready Function
