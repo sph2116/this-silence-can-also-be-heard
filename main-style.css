@@ -236,6 +236,7 @@ div.layer3 {
   opacity: .75;
   margin-top: 24px;
   line-height: 1.75;
+  margin-bottom: 36px;
 }
 
 div.main-circle {
@@ -267,6 +268,7 @@ div.main-circle {
     width: var(--width);
     height: var(--height);
     transform: translate(calc(-1 * var(--width) / 2),calc(-1 * var(--height) / 2));
+    filter: blur(8px);
   }
 
   h2 {
