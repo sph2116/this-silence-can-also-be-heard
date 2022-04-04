@@ -91,7 +91,7 @@ body {
 
 
 main h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.75;
     font-family: 'Ano Black';
     font-weight: 800;
@@ -102,7 +102,7 @@ main h2 {
     text-align: left;
     position: relative;
     margin-top: 24px;
-    margin-bottom: 64px;
+    margin-bottom: 96px;
     /* background-color: aqua; */
     letter-spacing: 2;
 }
