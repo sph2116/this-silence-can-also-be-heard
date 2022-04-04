@@ -200,12 +200,14 @@ function stopBgChange(){
 
 
 //Clear start screen when user clicks start
-startButtonTag.addEventListener("click", function(){
-    startScreenTag.style.opacity = 0;
+// startButtonTag.addEventListener("click", function(){
+// })//End start button click
+    // startScreenTag.style.opacity = 0;
     bellSound.play()
     bgChange()
 
-    $(".text").animate({opacity: 1}, 3000)
+    $(".start-screen").addClass("fade")
+    $(".text").delay(6000).animate({opacity: 1}, 3000)
 
     // textHeight = $(".text").height()
     // textTop = (textHeight * -1) - 40
@@ -222,6 +224,6 @@ startButtonTag.addEventListener("click", function(){
     //     windowHeight = $(window).height()
     //     // $(".text").css("top", `+=${windowHeight}`)
     // }); //End animate
- })//End start button click
+
 
 })//End Document Ready Function

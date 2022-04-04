@@ -36,9 +36,13 @@
        opacity: 0; 
     }
     
-    100% {
+    50% {
         opacity: 1; 
     }
+
+    100%{
+      opacity: 0; 
+   }
 }
 
 :root { 
@@ -52,6 +56,16 @@ body {
     background-color: rgba(.5,.5,.2,.2)
 }
 
+.layer0 {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  filter: blur(50px);
+  opacity: .75;
+  text-align: center;
+}
+
 .start-screen {
     position: fixed;
     width: 100vw;
@@ -61,20 +75,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 1;
+    opacity: 0;
     transition: opacity .5s;
 
 }
 
-.layer0 {
-    position: fixed;
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    filter: blur(50px);
-    opacity: .75;
-    text-align: center;
-}
+
 
 .start-screen h2 {
     font-size: 3rem;
@@ -86,6 +92,7 @@ body {
     z-index: 11;
     filter: blur(1px);
     text-align: center;
+
 }
 
 .start-screen button {
@@ -175,7 +182,7 @@ body {
 }
 
 .fade {
-    animation: fade 3s;
+    animation: fade 4s;
 }
 
 main {
