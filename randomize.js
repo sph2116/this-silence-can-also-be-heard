@@ -207,7 +207,8 @@ function stopBgChange(){
     bgChange()
 
     // $(".start-screen").addClass("fade")
-    $(".text").delay(6000).animate({opacity: 1}, 3000)
+    // $(".start-screen").animate({opacity: 0}, 3000)
+    $(".text").delay(1000).animate({opacity: 1}, 3000)
 
     // textHeight = $(".text").height()
     // textTop = (textHeight * -1) - 40

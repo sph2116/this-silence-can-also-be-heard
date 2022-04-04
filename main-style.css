@@ -19,6 +19,13 @@
   font-style: italic;
 }
 
+@font-face {
+  src: url(assets/AnoBlack-UpperLowerBackItalic.otf);
+  font-family: 'Ano Black';
+  font-weight: 800;
+  font-style: oblique;
+}
+
 @keyframes breathe {
     0% {
         opacity: 1;
@@ -75,26 +82,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    animation: fade 4s;
+    opacity: 1;
+    /* animation: fade 4s; */
     transition: opacity .5s;
 
 }
 
 
 
-.start-screen h2 {
-    font-size: 3rem;
+main h2 {
+    font-size: 1.25rem;
     line-height: 1.75;
-    font-family: 'Ano Upper Lower';
-    font-weight: 400;
+    font-family: 'Ano Black';
+    font-weight: 800;
     font-style: oblique;
     color: #3b3e40;
     z-index: 11;
     filter: blur(1px);
-    text-align: center;
+    text-align: left;
     position: relative;
-
+    margin-top: 24px;
+    margin-bottom: 64px;
+    /* background-color: aqua; */
+    letter-spacing: 2;
 }
 
 .start-screen button {
@@ -342,8 +352,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  /* font-size: 100%; */
+  /* font: inherit; */
   vertical-align: baseline;
 }
 
