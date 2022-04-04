@@ -76,6 +76,7 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0;
+    animation: fade 4s;
     transition: opacity .5s;
 
 }
@@ -92,6 +93,7 @@ body {
     z-index: 11;
     filter: blur(1px);
     text-align: center;
+    position: relative;
 
 }
 
@@ -279,7 +281,7 @@ div.main-circle {
   }
 
   h2 {
-    transform: translateY(-24px);
+    top: -24px;
   }
 
 }

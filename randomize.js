@@ -203,10 +203,10 @@ function stopBgChange(){
 // startButtonTag.addEventListener("click", function(){
 // })//End start button click
     // startScreenTag.style.opacity = 0;
-    bellSound.play()
+    // bellSound.play()
     bgChange()
 
-    $(".start-screen").addClass("fade")
+    // $(".start-screen").addClass("fade")
     $(".text").delay(6000).animate({opacity: 1}, 3000)
 
     // textHeight = $(".text").height()
